@@ -12,3 +12,7 @@ install-deb:
 
 install-pip: $(VENV)
 	. $(VENV)/bin/activate; pip3 install --upgrade -r requirements.txt
+
+text-generation-demo:
+	. $(VENV)/bin/activate; src/text_generation_demo.py
+
