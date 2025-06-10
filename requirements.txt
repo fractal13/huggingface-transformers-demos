@@ -1,3 +1,5 @@
 pip
 torch
 transformers
+pillow
+
