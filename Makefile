@@ -17,6 +17,12 @@ install-deb:
 install-pip: $(VENV)
 	. $(VENV)/bin/activate; pip3 install --upgrade -r requirements.txt
 
+sentiment-analysis-demo:
+	. $(VENV)/bin/activate; src/sentiment_analysis_demo.py
+
+zero-shot-classification-demo:
+	. $(VENV)/bin/activate; src/zero_shot_classification.py
+
 text-generation-demo:
 	. $(VENV)/bin/activate; src/text_generation_demo.py
 
